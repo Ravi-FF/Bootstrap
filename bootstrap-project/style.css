@@ -1,0 +1,246 @@
+
+a {
+    text-decoration: none;
+}
+
+#navbarNav ul li a {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: 2.5rem;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.icon a i {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.button-hover {
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.5s;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-button {
+    background-color: #a8d741;
+}
+
+.nav-button:hover {
+    background-color: white;
+    box-shadow: 0 27px 30px -20px #000000;
+    transform: scale(1.1) rotateX(1deg) rotateY(0deg) rotateZ(4deg);
+}
+
+.nav-button span {
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #a8d741;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.Design {
+    background-color: #a8d741;
+    height: 600px;
+    margin: 50px 0;
+}
+
+.t-shirt-center h2 {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.t-shirt-center h4 {
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    font-weight: bolder;
+}
+
+.t-shirt-btn {
+    background-color: #000000;
+    color: white;
+    border: 2px solid white;
+}
+
+.t-shirt-btn:hover {
+    border-color: black;
+    color: black;
+    background-color: white;
+    box-shadow: 0 27px 30px -20px #000000;
+    transform: scale(1.1) rotateX(1deg) rotateY(0deg) rotateZ(4deg);
+}
+
+.box-item .emoji i {
+    font-size: 100px;
+    color: #a8d741;
+}
+
+/* work-section started here  */
+.work-section{
+    padding: 5rem 0;
+}
+.card-btn a:nth-child(1) button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.card-btn a:nth-child(1) button:hover {
+    background-color: #a8d741;
+}
+
+.card-body h5 {
+    font-size: 77px;
+    font-weight: normal;
+}
+
+.card-body-2 p {
+    font-size: 2.2rem;
+}
+
+.card-h {
+    transition: 0.5s;
+}
+
+.card-h:hover {
+    box-shadow: 0 50px 50px -25px rgba(0, 0, 0, 0.3);
+    transform: rotate(-2deg) scale(1.01);
+}
+
+/* work-section end here  */
+
+/* about-section started here  */
+.about-section{
+    padding: 6rem 0;
+    /* padding-bottom: 2rem; */
+}
+.about-section .container {
+    width: 1000px;
+}
+
+.about .about-text p {
+    font-size: 1.3rem;
+    color: #696969;
+}
+
+/* about-section end here  */
+
+/* tool-section started  */
+.tool-box {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.tool-box .card .card-img {
+    height: 280px;
+}
+
+.tool-box .card .card-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.tool-box .three-card {
+    background-color: #a8d741;
+    padding: 2rem 1rem;
+}
+
+.shop-section {
+    padding: 6rem 0;
+}
+
+.shop-section .card-h {
+    background-color: rgb(234, 232, 232);
+}
+
+/* viedo-section  */
+.viedo-wrapper {
+    background-color: #a8d741;
+}
+
+.viedo-wrapper h1 {
+    font-size: 4rem;
+}
+
+.viedo-wrapper .you-tube {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #a8d741;
+}
+
+/* three-card section start  */
+.three-card {
+    padding: 5rem 0;
+}
+
+.three-card .three-card-img {
+    width: 35%;
+}
+
+.three-card .card-box {
+    background-color: rgb(234, 232, 232);
+}
+
+/* three-card section end  */
+.one-card {
+    padding: 5rem 0;
+}
+
+.one-card .row {
+    background-color: rgb(234, 232, 232);
+    padding: 2rem 1rem;
+}
+/* contect-section  */
+.contect-section {
+    padding: 5rem 0;
+}
+
+.contect-section .card-wrapper {
+    background-color: rgb(234, 232, 232);
+    padding: 3rem;
+}
+
+.contect-section h1 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.contect-section .card-wrapper .email {
+    font-size: 6rem;
+}
+
+.contect-section .message-part form {
+    background-color: #a8d741;
+    padding: 2rem;
+}
+
+.contect-section .message-part {
+    padding-top: 5rem;
+}
+
+.map-section .google-map {
+    height: 35rem;
+}
+@media (min-width:767px){
+    .container{
+        max-width: 1400px;
+        padding: 0 2rem;
+    }
+}
