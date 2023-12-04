@@ -1,13 +1,16 @@
-
 a {
     text-decoration: none;
 }
 
 #navbarNav ul li a {
     color: black;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin-right: 2.5rem;
+    margin: 0.3rem 1.5rem;
+}
+
+.container {
+    max-width: 1400px;
 }
 
 body {
@@ -27,7 +30,8 @@ body {
 .button-hover {
     font-size: 1.1rem;
     font-weight: 500;
-    transition: 0.5s;
+    color: #000000;
+    transition: 0.4s ease-in-out;
     border: 2px solid black;
     border-radius: 100px;
     padding: 10px 20px;
@@ -40,6 +44,8 @@ body {
 
 .nav-button:hover {
     background-color: white;
+    color: #000000;
+    border-color: black;
     box-shadow: 0 27px 30px -20px #000000;
     transform: scale(1.1) rotateX(1deg) rotateY(0deg) rotateZ(4deg);
 }
@@ -56,16 +62,17 @@ body {
 
 .Design {
     background-color: #a8d741;
-    height: 600px;
-    margin: 50px 0;
+    padding: 6rem 0;
+    margin: 4rem 0;
 }
 
-.t-shirt-center h2 {
-    font-size: 80px;
+.Design h2 {
+    font-size: 5rem;
     font-weight: 400;
 }
 
-.t-shirt-center h4 {
+.Design h4 {
+    display: inline-block;
     font-size: 20px;
     border-bottom: 2px solid black;
     font-weight: bolder;
@@ -91,26 +98,28 @@ body {
 }
 
 /* work-section started here  */
-.work-section{
+.work-section {
     padding: 5rem 0;
 }
-.card-btn a:nth-child(1) button {
+
+.card-btn div:nth-child(1) a {
     background-color: white;
     color: black;
     border: 2px solid black;
 }
 
-.card-btn a:nth-child(1) button:hover {
+.card-btn div:nth-child(1) a:hover {
     background-color: #a8d741;
 }
 
 .card-body h5 {
-    font-size: 77px;
+    font-size: 4rem;
     font-weight: normal;
 }
 
 .card-body-2 p {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
+    line-height: 3rem;
 }
 
 .card-h {
@@ -125,12 +134,8 @@ body {
 /* work-section end here  */
 
 /* about-section started here  */
-.about-section{
+.about-section {
     padding: 6rem 0;
-    /* padding-bottom: 2rem; */
-}
-.about-section .container {
-    width: 1000px;
 }
 
 .about .about-text p {
@@ -207,6 +212,7 @@ body {
     background-color: rgb(234, 232, 232);
     padding: 2rem 1rem;
 }
+
 /* contect-section  */
 .contect-section {
     padding: 5rem 0;
@@ -238,9 +244,38 @@ body {
 .map-section .google-map {
     height: 35rem;
 }
-@media (min-width:767px){
-    .container{
-        max-width: 1400px;
-        padding: 0 2rem;
+
+@media screen and (max-width:991px) {
+
+    .work-section,
+    .shop-section,
+    .tool-box,
+    .one-card,
+    .contect-section .message-part {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .Design {
+        padding: 1rem 0;
+    }
+
+    .Design h2 {
+        font-size: 2.5rem;
+    }
+
+    .card-btn {
+        flex-direction: column;
+    }
+
+    .card-btn div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .viedo-wrapper h1 {
+        font-size: 2rem;
     }
 }
