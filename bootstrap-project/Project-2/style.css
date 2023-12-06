@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(rgba(42, 45, 84, 0.6), rgba(42, 45, 84, 0.6)), url(./img/welcome-banner.jpg);
+    margin-bottom: 99px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* navbar start  */
+nav .nav-link {
+    color: white;
+    transition: 0.3s linear;
+    margin-right: 30px;
+}
+
+.logo {
+    font-family: serif !important;
+    font-weight: bold;
+    font-size: 27px;
+    color: white;
+}
+
+nav .nav-active {
+    color: #0102fa;
+}
+
+nav .nav-link:hover {
+    color: #0102fa;
+}
+
+.wel-btn a {
+    color: white;
+    padding: 0.8rem 3rem;
+    border-radius: 0;
+    background-color: #4e4ffa;
+}
+
+.wel-btn a:hover {
+    background-color: #0102fa;
+    color: white;
+    transition: 0.3s linear;
+}
+
+header .welcome {
+    height: 600px;
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.center-input {
+    position: relative;
+    top: 150px;
+    background-color: white;
+    box-shadow: 0 10px 40px 0px rgba(38, 40, 64, .2);
+}
+
+.form-control {
+    height: 50px;
+    box-shadow: none !important;
+    border: 1px solid #f8f8f8 !important;
+    background: #f8f8f8 !important;
+}
+
+.center-input .select-box-1 .down-arrow {
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    text-align: center;
+    color: #888f9d;
+}
+
+.center-input .select-box-1 select {
+    color: #888f9d;
+}
+
+.center-input .select-box-1 {
+    position: relative;
+    z-index: 1;
+}
+
+.center-input .select {
+    margin-left: 75px;
+}
+
+/* navbar end  */
+
+/* three-card section start  */
+.three-card-section {
+    padding: 99px 0;
+}
+
+.card-text {
+    position: relative;
+    font-size: 20px;
+}
+
+.card-text::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #0102fa;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card-box {
+    padding: 70px 0px;
+    transition: 0.3s linear;
+    color: #818998;
+}
+
+p {
+    color: #5e6778 !important;
+    font-size: 16px;
+}
+
+.card-box:hover {
+    box-shadow: 0 12px 30px 0px rgba(0, 1, 193, .2);
+    background: #4e4ffa;
+    color: white;
+}
+
+.card-box:hover .card-text {
+    color: white !important;
+}
+
+.card-box:hover .card-text::after {
+    background-color: white;
+}
+
+.three-card-section .card-icon i {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+/* three-card section end  */
+.car-slide {
+    padding: 60px 0;
+    background-color: #f8f9fb;
+}
+
+.heading {
+    position: relative;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.heading::after {
+    position: absolute;
+    background-color: #4e4ffa;
+    top: 100%;
+    left: 50%;
+    width: 80px;
+    height: 2px;
+    transform: translate(-50%);
+    content: "";
+}
+
+.heading-p {
+    font-size: 18px;
+    padding: 13px 0;
+}
+
+/* feature-car section  */
+.feature-car {
+    padding: 50px 0;
+}
+
+.feature-car .car-info span {
+    margin-left: 15px;
+    color: rgb(143, 139, 139);
+    font-size: 15px;
+}
+
+.client-section {
+    padding: 50px 0;
+    background-color: #f8f9fb;
+}
+
+.company-section {
+    padding: 90px 0;
+}
+
+/* footer-section start */
+.footer {
+    background: #2a2d54;
+    color: white;
+}
+
+.footer-top {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.footer-ul li a {
+    display: inline-block;
+    margin: 8px 0;
+    color: #cfd0e3;
+    font-size: 15px;
+}
+
+.footer-ul h6 {
+    margin-bottom: 40px;
+}
+
+.footer-ul li a:hover {
+    transform: translateX(10px);
+}
+
+.footer-ul .input-box {
+    position: relative;
+}
+.footer-ul{
+    padding: 0;
+}
+.footer-ul .input-box .form-control {
+    height: 30px;
+    border-radius: 0;
+    background-color: #26294d !important;
+    padding: 15px 20px !important;
+    border: none !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2) !important;
+}
+
+.footer-ul .input-box input[type="email"] {
+    color: #666c81;
+    transition: 0.4s linear;
+    font-size: 12px;
+}
+
+.footer-ul .input-box .right {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
+
+.footer-ul .input-box .form-control:hover {
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4) !important;
+}
+
+.footer-ul .input-box input[type="email"]::placeholder {
+    color: white;
+}
+
+.footer-top .icon a {
+    margin-right: 20px;
+    color: #8d919a;
+}
+
+.footer-top .icon a:hover {
+    color: white;
+}
+
+.footer-top .Copyright {
+    font-size: 15px;
+}
+
+/* footer-section end */
+@media screen and (max-width:991px) {
+    .center-input .select{
+        margin: 0;
+        padding:0 30px !important;
+    }
+    .center-input .wel-btn{
+        margin-top: 20px;
+    }
+}
