@@ -5,7 +5,7 @@
 }
 
 header {
-    background: linear-gradient(rgba(42, 45, 84, 0.6), rgba(42, 45, 84, 0.6)), url(./img/welcome-banner.jpg);
+    background: linear-gradient(rgba(42, 45, 84, 0.6), rgba(42, 45, 84, 0.6)), url(./img/welcome-banner.jpg) no-repeat center/cover;
     margin-bottom: 99px;
 }
 
