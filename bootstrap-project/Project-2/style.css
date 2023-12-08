@@ -31,7 +31,15 @@ nav .nav-link {
     font-size: 27px;
     color: white;
 }
-
+.sticky{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+}
+.sticky a{
+    color: white;
+}
 nav .nav-active {
     color: #0102fa;
 }
