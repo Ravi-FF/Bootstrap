@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(0, 185, 142);
+    --body-bg-color: rgb(239, 253, 245);
+    /* --body-color: rgb(241, 241, 241); */
+    --dark-color: rgb(12, 39, 68);
+    --white-color: white;
+    --effect: .3s linear;
+    --hover-color: rgb(238, 234, 234);
+}
+
+body {
+    background-color: var(--body-bg-color);
+    /* color: var(--body-color); */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--dark-color) !important;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.4rem !important;
+}
+
+h1 {
+    font-size: 4.5rem !important;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 4rem !important;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.9rem !important;
+}
+h1 span {
+    color: var(--main-color);
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.color-btn{
+    padding: 0 5rem !important;
+    height: 5rem;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.6rem !important;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 5rem;
+    padding: 0;
+}
+.form-control,.form-select{
+    box-shadow: none !important;
+    height: 5rem;
+    font-size: 1.5rem;
+}
+/* header-start here  */
+header {
+    background-color: var(--white-color);
+    position: relative !important;
+}
+
+header nav {
+    position: absolute !important;
+    top: 4rem;
+    width: 100%;
+    left: 0;
+    transform: scale(0.9);
+    transition: var(--effect);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    z-index: 10;
+}
+
+.add-nav-class {
+    top: 0;
+    position: sticky !important;
+    transform: scale(1);
+}
+
+header nav h2 {
+    color: var(--main-color);
+}
+
+header nav .logo img {
+    border: 1px dashed var(--main-color);
+    padding: 0.5rem;
+    margin-right: 1.5rem;
+    border-radius: 50px;
+}
+
+header nav .color-btn {
+    height: 4rem;
+    padding: 0 4rem !important;
+    line-height: 4rem;
+}
+
+nav .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 2rem 0;
+    font-size: 1.8rem !important;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: var(--effect);
+    color: var(--dark-color) !important;
+}
+
+nav .navbar-nav .nav-item {
+    margin: 0 1rem;
+}
+
+nav .navbar-nav .nav-item .submenu {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    visibility: hidden;
+    top: 100%;
+    width: 18rem;
+    transform: rotateX(-75deg);
+    padding: 0.5rem 0;
+    transition: var(--effect);
+    background-color: white;
+}
+
+nav .navbar-nav .nav-item .submenu li a {
+    color: var(--dark-color);
+    font-size: 1.6rem !important;
+    font-weight: 500;
+    transition: var(--effect);
+    padding: 1rem;
+    display: block;
+}
+
+nav .navbar-nav .nav-item .submenu li a:hover {
+    background-color: var(--hover-color);
+}
+
+nav .navbar-nav .nav-item:hover .submenu {
+    transform: rotateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .navbar-nav .active {
+    color: var(--main-color) !important;
+}
+
+nav .navbar-nav .nav-link:hover {
+    color: var(--main-color) !important;
+}
+.center-right .left-right,.left-left{
+    position: absolute;
+    background-color:var(--main-color);
+    width: 5rem;
+    opacity: 1;
+    height: 5rem;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2rem;
+    transform: translatey(-50%);
+    line-height: 5rem;
+    top: 50%;
+    left: -2.5rem;
+}
+.center-right .left-right:hover{
+    opacity: 0.9;
+}
+.center-right .left-left{
+    top: 60%;
+}
+header .header-input{
+    background-color: var(--main-color);
+}
+header .header-input .color-btn{
+    padding: 0 6rem !important;
+    background-color: var(--dark-color);
+}
+/* property-section started here  */
+.property-section{
+  padding: 8rem 0;
+}
+.property-section .icon-card{
+    background-color: var(--body-bg-color);
+}
+.property-section .card-item p{
+    color: var(--main-color);
+}
+.property-section .card-item{
+    transition: var(--effect);
+
+}
+.property-section .card-item .icon{
+    border: 1px dashed var(--main-color);
+    background-color: var(--white-color);
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+.property-section .icon-card:hover .card-item{
+background-color: var(--main-color) !important;
+}
+.property-section .icon-card:hover .card-item h3,.property-section .icon-card:hover .card-item p{
+    color: var(--white-color) !important;
+
+}
+.property-section .card-item{
+    border: 1px dashed var(--main-color);
+    border-radius: 0.5rem;
+}

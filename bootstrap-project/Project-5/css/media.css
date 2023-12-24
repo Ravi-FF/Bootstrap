@@ -1,0 +1,24 @@
+@media screen and (max-width:992px){
+    html{
+        font-size: 50%;
+    }
+    header nav{
+        top: 0;
+        position: sticky;
+        padding: 2rem 0 !important;
+        transform: scale(1);
+    }
+}
+@media screen and (max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+@media screen and (max-width:576px){
+    html{
+        font-size: 40%;
+    }
+    .center-right .left-right,.left-left{
+        left: 2rem;
+    }
+}
