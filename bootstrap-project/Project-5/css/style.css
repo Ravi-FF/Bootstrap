@@ -43,9 +43,11 @@ h2 {
     font-size: 4rem !important;
     font-weight: 700;
 }
-h3{
+
+h3 {
     font-size: 1.9rem !important;
 }
+
 h1 span {
     color: var(--main-color);
 }
@@ -60,7 +62,7 @@ ul {
     list-style: none;
 }
 
-.color-btn{
+.color-btn {
     padding: 0 5rem !important;
     height: 5rem;
     background-color: var(--main-color);
@@ -72,11 +74,14 @@ ul {
     line-height: 5rem;
     padding: 0;
 }
-.form-control,.form-select{
+
+.form-control,
+.form-select {
     box-shadow: none !important;
     height: 5rem;
     font-size: 1.5rem;
 }
+
 /* header-start here  */
 header {
     background-color: var(--white-color);
@@ -86,9 +91,9 @@ header {
 header nav {
     position: absolute !important;
     top: 4rem;
-    width: 100%;
     left: 0;
-    transform: scale(0.9);
+    right: 0;
+    transform: scaleX(0.9);
     transition: var(--effect);
     box-shadow: 0 0 30px rgba(0, 0, 0, .08);
     z-index: 10;
@@ -96,12 +101,14 @@ header nav {
 
 .add-nav-class {
     top: 0;
-    position: sticky !important;
-    transform: scale(1);
+    position: fixed !important;
+    width: 87%;
+    margin: 0 auto;
+    transform: scaleX(1);
 }
 
 header nav h2 {
-    color: var(--main-color);
+    color: var(--main-color) !important;
 }
 
 header nav .logo img {
@@ -120,7 +127,7 @@ header nav .color-btn {
 nav .navbar-nav .nav-link {
     display: inline-block;
     padding: 2rem 0;
-    font-size: 1.8rem !important;
+    font-size: 1.5rem !important;
     letter-spacing: 1px;
     font-weight: 500;
     transition: var(--effect);
@@ -170,9 +177,11 @@ nav .navbar-nav .active {
 nav .navbar-nav .nav-link:hover {
     color: var(--main-color) !important;
 }
-.center-right .left-right,.left-left{
+
+.center-right .left-right,
+.left-left {
     position: absolute;
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     width: 5rem;
     opacity: 1;
     height: 5rem;
@@ -186,34 +195,43 @@ nav .navbar-nav .nav-link:hover {
     top: 50%;
     left: -2.5rem;
 }
-.center-right .left-right:hover{
+
+.center-right .left-right:hover {
     opacity: 0.9;
 }
-.center-right .left-left{
+
+.center-right .left-left {
     top: 60%;
 }
-header .header-input{
+
+header .header-input {
     background-color: var(--main-color);
 }
-header .header-input .color-btn{
+
+header .header-input .color-btn {
     padding: 0 6rem !important;
     background-color: var(--dark-color);
 }
+
 /* property-section started here  */
-.property-section{
-  padding: 8rem 0;
+.property-section {
+    padding: 8rem 0;
 }
-.property-section .icon-card{
+
+.property-section .icon-card {
     background-color: var(--body-bg-color);
 }
-.property-section .card-item p{
+
+.property-section .card-item p {
     color: var(--main-color);
 }
-.property-section .card-item{
+
+.property-section .card-item {
     transition: var(--effect);
 
 }
-.property-section .card-item .icon{
+
+.property-section .card-item .icon {
     border: 1px dashed var(--main-color);
     background-color: var(--white-color);
     padding: 1rem;
@@ -223,14 +241,130 @@ header .header-input .color-btn{
     width: 60px;
     border-radius: 50px;
 }
-.property-section .icon-card:hover .card-item{
-background-color: var(--main-color) !important;
+
+.property-section .icon-card:hover .card-item {
+    background-color: var(--main-color) !important;
 }
-.property-section .icon-card:hover .card-item h3,.property-section .icon-card:hover .card-item p{
+
+.property-section .icon-card:hover .card-item h3,
+.property-section .icon-card:hover .card-item p {
     color: var(--white-color) !important;
 
 }
-.property-section .card-item{
+
+.property-section .card-item {
     border: 1px dashed var(--main-color);
     border-radius: 0.5rem;
+}
+
+/* home-section started here  */
+.home-section .home-right ul li p i {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+
+.home-section .home-left {
+    padding: 5rem;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.home-section .home-left::after {
+    position: absolute;
+    content: "";
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: skewx(20deg);
+    left: -50%;
+    z-index: -1;
+}
+
+/* property-listing section start  */
+.property-listing .property-top .btn {
+    border: 1px solid var(--main-color) !important;
+    padding: 0.8rem 2rem;
+    margin-left: 1rem;
+    transition: var(--effect);
+}
+
+.property-listing .property-top .active {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.property-listing .property-top .btn:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.property-listing .card .card-bottom {
+    border-top: 1px dashed var(--main-color);
+}
+
+.property-listing .card .home-img img {
+    transition: var(--effect);
+}
+.property-listing .card{
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+.property-listing .card:hover img {
+    transform: scale(1.1);
+}
+
+.property-listing .card a {
+    display: block;
+    color: var(--dark-color);
+    font-size: 2rem !important;
+    transition: var(--effect);
+    font-weight: 700;
+}
+
+.property-listing .card a:hover {
+    color: var(--main-color);
+}
+
+.property-listing .card .card-bottom p:nth-child(2) {
+    border-left: 1px dashed var(--main-color);
+    border-right: 1px dashed var(--main-color);
+}
+
+.property-listing .card i {
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+
+.property-listing .card h3 {
+    color: var(--main-color) !important;
+    font-size: 2.5rem !important;
+}
+.property-listing .card .span-1{
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+.property-listing .card .span-2{
+    background-color: var(--white-color);
+    color: var(--main-color);
+    font-size: 1.5rem;
+    top: -2rem;
+    border-radius: 0.5rem;
+    left: 2rem;
+}
+/* contect-part started here  */
+.contect-part{
+    background-color: var(--body-bg-color);
+}
+.contect-part-wrapper{
+    border: 1px dashed var(--main-color);
+}
+.contect-part .color-btn+.color-btn{
+    background-color: var(--dark-color);
 }

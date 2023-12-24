@@ -11,12 +11,12 @@
 }
 @media screen and (max-width:768px){
     html{
-        font-size: 45%;
+        font-size: 48%;
     }
 }
 @media screen and (max-width:576px){
     html{
-        font-size: 40%;
+        /* font-size: 40%; */
     }
     .center-right .left-right,.left-left{
         left: 2rem;
