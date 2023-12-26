@@ -1,24 +1,36 @@
-@media screen and (max-width:992px){
-    html{
+@media screen and (max-width:992px) {
+    html {
         font-size: 50%;
     }
-    header nav{
+
+    header nav {
         top: 0;
-        position: sticky;
-        padding: 2rem 0 !important;
         transform: scale(1);
+        padding: 2rem 0 !important;
+    }
+
+    nav .navbar-nav .nav-item .submenu {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        transform: rotate(0);
+        display: none;
     }
 }
-@media screen and (max-width:768px){
-    html{
+
+@media screen and (max-width:768px) {
+    html {
         font-size: 48%;
     }
 }
-@media screen and (max-width:576px){
-    html{
-        /* font-size: 40%; */
+
+@media screen and (max-width:576px) {
+    html {
+        font-size: 45%;
     }
-    .center-right .left-right,.left-left{
+
+    .center-right .left-right,
+    .left-left {
         left: 2rem;
     }
 }
