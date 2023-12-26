@@ -45,16 +45,16 @@
                                 <a class="nav-link" href="#">About</a>
                             </li>
                             <li class="nav-item  position-relative">
-                                <a class="nav-link" href="#" onclick="linkShow('#ul-1')">Property <i class="bi bi-chevron-down"></i></a>
-                                <ul class="submenu border" id="ul-1">
+                                <a class="nav-link" href="#">Property <i class="bi bi-chevron-down"></i></a>
+                                <ul class="submenu border">
                                     <li><a href="#">Property List</a></li>
                                     <li><a href="#">Property Type</a></li>
                                     <li><a href="#">Property Agent</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item  position-relative">
-                                <a class="nav-link" href="#" onclick="linkShow('#ul-2')">Page <i class="bi bi-chevron-down"></i></a>
-                                <ul class="submenu border" id="ul-2">
+                                <a class="nav-link" href="#">Page <i class="bi bi-chevron-down"></i></a>
+                                <ul class="submenu border">
                                     <li><a href="#">Testimonial</a></li>
                                     <li><a href="#">404 Error</a></li>
                                 </ul>
@@ -780,11 +780,6 @@
         let nav = document.querySelector("nav");
         nav.classList.toggle("add-nav-class", scrollY > 40)
     });
-    // nav-link show 
-    function linkShow(ul) {
-         let ul_list = document.querySelector(ul);
-         ul_list.classList.toggle("add-nav-show")
-    }
 </script>
 
 </html>
