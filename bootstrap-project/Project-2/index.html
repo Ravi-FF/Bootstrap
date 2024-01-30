@@ -20,11 +20,19 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" onload="runLoader()">
+  <!-- preloader  -->
+  <div class="preloader">
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
   <!-- header-section started here  -->
   <header>
     <!-- nav-start  -->
-    <nav class="navbar navbar-expand-lg py-3" id="Navbar">
+    <nav class="navbar navbar-expand-lg py-3 fixed-top bg-black" id="Navbar">
       <div class="container">
         <a class="navbar-brand  logo" href="#">CARVILLA</a>
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -34,13 +42,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link nav-active" href="#">HOME</a>
+              <a class="nav-link active" href="#home_section">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SERVICE</a>
+              <a class="nav-link" href="#service_section">SERVICE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FEATURED CARS</a>
+              <a class="nav-link" href="#feature_section">FEATURED CARS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">NEW CARS</a>
@@ -49,7 +57,7 @@
               <a class="nav-link" href="#">BARNDS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTECT</a>
+              <a class="nav-link" href="#contect_section">CONTECT</a>
             </li>
           </ul>
         </div>
@@ -57,7 +65,7 @@
     </nav>
     <!-- nav-end  -->
     <!-- welcome-start  -->
-    <div class="welcome d-flex align-items-center">
+    <div class="welcome d-flex align-items-center" id="home_section">
       <div class="container">
         <div class="row text-center justify-content-center">
           <div class="col-12">
@@ -168,7 +176,7 @@
   <!-- header-section end here  -->
 
   <!-- three-card-section started here  -->
-  <section class="three-card-section">
+  <section class="three-card-section" id="service_section">
     <div class="container">
       <div class="row justify-content-center gap-4 gap-lg-0 my-5">
         <div class="col-12 col-sm-10 col-lg-4 col-md-6">
@@ -205,8 +213,9 @@
     </div>
   </section>
   <!-- three-card-section end here  -->
+
   <!-- car-slider-section start -->
-  <section class="car-slide">
+  <section class="car-slide" id="feature_section">
     <div class="container">
       <div class="heading-part text-center">
         <p class="m-0 heading-p">Checkout the Latest Cars</p>
@@ -465,7 +474,7 @@
   </div>
   <!-- company-section end  -->
   <!-- footer-section started here  -->
-  <footer class="footer">
+  <footer class="footer" id="contect_section">
     <div class="container">
       <div class="footer-top text-center text-lg-start">
         <div class="row justify-content-between">
@@ -535,10 +544,12 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
     <script>
-      window.addEventListener("scroll",function(){
-        let nav = document.getElementById("Navbar")
-        nav.classList.toggle("sticky", window.scrollY>0)
-      })
+      // window.addEventListener("onload",()=>{
+        // })
+        let runLoader = ()=>{
+          let loader = document.querySelector(".preloader")
+loader.style.display = "none"
+      }
     </script>
 </body>
 
