@@ -19,6 +19,11 @@ a {
     transition: var(--effect);
 }
 
+section,
+header .top-nav {
+    background-color: var(--bg-color);
+}
+
 input,
 button {
     border: none;
@@ -27,25 +32,52 @@ button {
 
 :root {
     --black-color: black;
-    --light-color: white;
+    --bg-color: white;
     --primary-color: #f50537;
     --primary-skyblue: #037ef3;
-    --effect: 0.2s linear;
-    --font-color: #707070;
+    --effect: 0.4s linear;
+    --font-dark-color: #707070;
+    --font-light-color: white;
+    --border-color: #eee;
+    --bg-light-gray: #F8F9FA;
+    --footer-bg: #060500;
 }
-.btn-style{
+
+.btn-style {
     background-color: var(--primary-color);
     padding: 10px 36px !important;
     border-radius: 30px;
     transition: var(--effect);
     font-weight: 500;
     font-size: 16px;
-    color: var(--light-color);
+    color: var(--black-color);
+
 }
-.btn-style:hover{
+
+.btn-style:hover {
     background-color: var(--primary-skyblue);
-    color: var(--light-color) !important;
+    color: var(--black-color) !important;
 }
+
+h1 {
+    font-size: 50px;
+    color: var(--black-color);
+}
+
+p {
+    color: var(--font-dark-color);
+    font-size: 18 px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold !important;
+    color: var(--black-color);
+}
+
 /* header-section start  */
 header .top-nav a {
     color: var(--black-color);
@@ -57,7 +89,7 @@ header .top-nav ul {
 }
 
 header .top-nav ul li:nth-child(1) {
-    color: var(--font-color);
+    color: var(--black-color);
     font-weight: 500;
 }
 
@@ -74,26 +106,31 @@ header a:active {
 }
 
 header .bottom-nav a {
-    color: var(--light-color);
+    color: white;
 }
 
 .bottom-nav nav {
-    top: 51px;
+    top: 56px;
 }
-.scrolled-fixed-nav{
-    background-color: var(--light-color) !important;
+
+.scrolled-fixed-nav {
+    background-color: var(--font-light-color) !important;
     top: 0 !important;
     box-shadow: 0px 1px 10px gray;
 }
-.scrolled-fixed-nav .change-mood i{
+
+.scrolled-fixed-nav .change-mood i {
     color: var(--black-color) !important;
 }
-.scrolled-fixed-nav a{
+
+.scrolled-fixed-nav a {
     color: var(--black-color) !important;
 }
-.scrolled-fixed-nav .active{
+
+.scrolled-fixed-nav .active {
     color: var(--primary-color) !important;
 }
+
 header .bottom-nav .fa-music {
     color: var(--primary-color) !important;
 }
@@ -129,7 +166,6 @@ header .bottom-nav .fa-music {
 }
 
 .bottom-nav .change-mood i {
-    color: var(--light-color);
     transition: var(--effect);
     margin-left: 20px;
     font-size: 25px;
@@ -137,7 +173,8 @@ header .bottom-nav .fa-music {
     cursor: pointer;
 }
 
-.bottom-nav .change-mood i:hover, .scrolled-fixed-nav .change-mood i:hover {
+.bottom-nav .change-mood i:hover,
+.scrolled-fixed-nav .change-mood i:hover {
     color: var(--primary-color) !important;
 }
 
@@ -163,7 +200,7 @@ header .bottom-nav .fa-music {
     width: 15px;
     content: "";
     height: 15px;
-    background-color: var(--light-color);
+    background-color: var(--font-light-color);
     position: absolute;
     top: -8px;
     left: 50%;
@@ -196,7 +233,7 @@ header .bottom-nav .fa-music {
 }
 
 .hero-section button {
-    background-color: var(--light-color);
+    background-color: var(--bg-color);
     color: var(--black-color);
     opacity: 1;
     height: 50px;
@@ -210,25 +247,29 @@ header .bottom-nav .fa-music {
 .hero-section .img-text {
     position: absolute;
     overflow: hidden;
-    color: var(--light-color) !important;
+    color: var(--font-light-color) !important;
     top: 50%;
     color: var(--black-color);
     transform: translateY(-50%);
     animation: slide-text 1s linear both 1;
 }
-@keyframes slide-text{
-    from{
+
+@keyframes slide-text {
+    from {
         left: -100%;
         opacity: 0;
     }
-    to{
+
+    to {
         left: 100px;
         opacity: 1;
     }
 }
+
 .hero-section .img-text h1 {
     font-family: "Londrina Outline", sans-serif;
     font-size: 100px;
+    font-weight: normal !important;
     margin: 20px 0;
 }
 
@@ -244,4 +285,317 @@ header .bottom-nav .fa-music {
 .hero-section .carousel-control-next {
     right: 30px !important;
 }
+
 /* header-section end  */
+
+/* welcome-section start  */
+.welcome-section .welcome-img::after {
+    content: '';
+    position: absolute;
+    border: 8px solid var(--border-color);
+    right: -25px;
+    left: 25px;
+    bottom: 25px;
+    top: -25px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* welcome-section end  */
+
+/* music-classes-section-start  */
+.music-class {
+    background-color: var(--bg-light-gray);
+}
+
+.music-class .music-box i {
+    background-color: var(--font-light-color);
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: var(--effect);
+    color: var(--primary-color);
+}
+
+.music-class .music-box:nth-child(3) i {
+    background-color: var(--primary-color);
+    color: var(--font-light-color) !important;
+}
+
+.music-class .music-box a {
+    color: var(--black-color);
+    transition: var(--effect);
+}
+
+.music-class .music-box:hover i {
+    background-color: var(--primary-color) !important;
+    color: var(--font-light-color);
+}
+
+.music-class .music-box a:hover {
+    color: var(--primary-color);
+}
+
+/* music-classes-section-end */
+/* vidoo-section start  */
+.video-section .video-wrapper {
+    height: 540px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/banner1.jpg) no-repeat center/cover;
+}
+
+.video-section .video-wrapper .play-btn i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+    transition: var(--effect);
+    color: var(--primary-color);
+    animation: play 1s linear infinite;
+}
+
+@keyframes play {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255 255 255 / 15%), 0 0 0 10px rgb(255 255 255 / 15%), 0 0 0 20px rgb(255 255 255 / 15%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 15%), 0 0 0 20px rgb(255 255 255 / 15%), 0 0 0 20px rgba(50, 100, 245, 0);
+    }
+}
+
+.video-section .video-wrapper .play-btn i:hover {
+    transform: scale(1.05);
+}
+
+.video-section .video-wrapper .play-btn {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.video-section .video-overly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: 0.3s linear;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    z-index: 100;
+    left: 0;
+    transform: scale(0);
+}
+
+.video-overly_show {
+    transform: scale(1) !important;
+}
+
+.video-section .video-overly .fa-xmark {
+    right: -40px;
+    top: -40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* viedo-section end */
+
+/* join-musical-section start  */
+.join-musical i {
+    background-color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+/* email-section started here  */
+.email-section .email-input {
+    height: 50px;
+}
+
+.email-section .email-input input[type="email"] {
+    border-radius: 50px !important;
+    box-shadow: none;
+}
+
+.email-section .email-input span {
+    right: 0;
+    top: 0;
+    background-color: var(--primary-color);
+    border-top-right-radius: 50px;
+    height: 100%;
+    width: 150px;
+    line-height: 45px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--effect);
+    border-bottom-right-radius: 50px;
+}
+
+.email-section .email-input span:hover {
+    background-color: var(--primary-skyblue);
+}
+
+.email-section .email-input input[type="email"]:focus {
+    border: none;
+    outline: 1px solid var(--primary-color);
+}
+
+/* contact-us section started here  */
+.contact-us h2 a {
+    font-size: 40px;
+    transition: var(--effect);
+    font-family: "Londrina Outline", sans-serif;
+}
+
+.contact-us .container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/image/banner3.jpg) no-repeat center/cover;
+}
+
+/* footer-section started  */
+footer {
+    background-color: var(--footer-bg);
+}
+
+footer .icons i,
+.img-text .icons i {
+    width: 40px;
+    height: 40px;
+    transition: var(--effect);
+    margin-left: 5px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+footer .icons i:hover,
+.img-text .icons i:hover {
+    background-color: var(--primary-skyblue);
+}
+
+footer h3 {
+    padding-bottom: 25px !important;
+    color: white;
+}
+
+footer .links li a {
+    padding: 5px 0;
+    display: inline-block;
+    transition: var(--effect);
+    color: var(--font-dark-color);
+}
+
+footer .links li a:hover {
+    color: var(--primary-color);
+    transform: translateX(10px);
+}
+
+footer .twitter-ul li a {
+    color: white;
+    opacity: 0.8;
+}
+
+footer .twitter-ul li a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* footer-section end */
+
+
+/*-------------------------------------- about us page started-----------------------------------  */
+.about-us-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/inner-banner.jpg);
+}
+
+.about-main {
+    background-color: var(--bg-light-gray);
+}
+
+.about-main .circle {
+    width: 30px;
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 2 !important;
+    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0), 0 0 0 5px rgba(0, 0, 0, 0.15);
+    background-color: var(--primary-color);
+}
+
+.about-main button,
+.about-main .img-div {
+    position: relative;
+    z-index: 2;
+}
+
+.about-main .text-box {
+    position: relative;
+    z-index: 2 !important;
+    background-color: var(--bg-color);
+
+}
+
+.about-main .img-box {
+    background-color: var(--bg-color);
+}
+
+.about-main .text-box::after {
+    position: absolute;
+    background-color: var(--bg-color);
+    content: "";
+    width: 20px;
+    top: 12px;
+    z-index: -1 !important;
+    left: -12px;
+    height: 20px;
+    transform: rotate(45deg);
+}
+
+.about-main .text-box strong {
+    font-size: 20px;
+    color: var(--black-color);
+}
+
+.about-main .timeline-ul::after {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    content: "";
+    background-color: var(--border-color);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    z-index: 1 !important;
+}
+
+/* about-card-section  */
+.about-cards {
+    background: var(--bg-color);
+}
+
+.about-cards .img-text {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: rotateY(180deg) scale(0.5,0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s linear;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.about-cards .img-main:hover .img-text{
+    transform: rotateY(0) scale(1,1);
+    opacity: 1;
+}
+/*-------------------------------------- about us page end-----------------------------------  */

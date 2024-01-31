@@ -2,17 +2,19 @@
     .bottom-nav .navbar-nav .nav-link {
         margin-right: 10px;
     }
+
     .hero-section .img-text h1 {
         font-size: 90px;
     }
-     /* .bottom-nav .change-mood{
-        top: 20px;
-        right: 27%;
-    } */
 }
+
 @media screen and (max-width:991px) {
     a {
         font-size: 13px;
+    }
+
+    h1 {
+        font-size: 35px !important;
     }
 
     header .top-nav ul li {
@@ -21,7 +23,7 @@
 
     .bottom-nav ul .nav-item:nth-child(7) {
         width: 100% !important;
-        padding:0 15px;
+        padding: 0 15px;
     }
 
     .bottom-nav ul .nav-item:nth-child(7) input {
@@ -40,13 +42,19 @@
     .bottom-nav ul .submenus {
         position: relative !important;
     }
-    .bottom-nav .change-mood i{
+
+    .bottom-nav .change-mood i {
         color: black !important;
         margin-left: 0;
         margin: 10px 0;
     }
+
     .hero-section .img-text h1 {
         font-size: 80px;
+    }
+
+    .viedo-section .viedo-wrapper {
+        height: 400px;
     }
 }
 
@@ -54,15 +62,81 @@
     header .top-nav ul {
         gap: 10px;
     }
+
     .hero-section .img-text h1 {
         font-size: 65px;
     }
+
+    .bottom-nav nav {
+        top: 36px;
+    }
+
+
+    /* about-section  */
+    .about-main .row>div,
+    .about-main .row>div>div {
+        text-align: center !important;
+    }
+
+    .about-main .row {
+        margin-top: 0 !important;
+        justify-content: center;
+    }
+
+    .about-main .circle {
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+
+    .about-main .text-box::after {
+        top: 0px;
+        left: 50%;
+        transform: rotate(45deg) translateX(-50%);
+    }
+    .about-main .timeline-ul::after {
+        height: 90%;
+    }
+    .about-main  button {
+        margin: 20px 0 !important;
+    }
 }
-@media screen and (max-width:576px){
+
+@media screen and (max-width:576px) {
     .hero-section .img-text h1 {
         font-size: 45px;
     }
-    .bottom-nav nav{
+
+    .bottom-nav nav {
         top: 63px;
+    }
+
+    .hero-section button {
+        top: 90%;
+        height: 40px;
+        width: 40px;
+    }
+
+    header .top-nav ul li:nth-child(1) {
+        display: none;
+    }
+
+    @keyframes slide-text {
+        to {
+            left: 30px;
+        }
+    }
+
+    .email-section .email-input span {
+        top: 60px;
+        border-radius: 50px;
+        height: 90%;
+        width: 100%;
+    }
+
+    .join-musical i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
     }
 }
