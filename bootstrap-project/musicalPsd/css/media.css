@@ -56,22 +56,6 @@
     .viedo-section .viedo-wrapper {
         height: 400px;
     }
-}
-
-@media screen and (max-width:768px) {
-    header .top-nav ul {
-        gap: 10px;
-    }
-
-    .hero-section .img-text h1 {
-        font-size: 65px;
-    }
-
-    .bottom-nav nav {
-        top: 36px;
-    }
-
-
     /* about-section  */
     .about-main .row>div,
     .about-main .row>div>div {
@@ -101,13 +85,27 @@
     }
 }
 
+@media screen and (max-width:768px) {
+    header .top-nav ul {
+        gap: 10px;
+    }
+
+    .hero-section .img-text h1 {
+        font-size: 65px;
+    }
+
+    .bottom-nav nav {
+        top: 36px;
+    }
+}
+
 @media screen and (max-width:576px) {
     .hero-section .img-text h1 {
         font-size: 45px;
     }
 
     .bottom-nav nav {
-        top: 63px;
+        top: 35px;
     }
 
     .hero-section button {

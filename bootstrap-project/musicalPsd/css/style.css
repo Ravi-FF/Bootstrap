@@ -43,6 +43,15 @@ button {
     --footer-bg: #060500;
 }
 
+.dark {
+    --font-dark-color: #b7b7b7;
+    --font-light-color: #19211e;
+    --bg-color: #19211e;
+    --black-color: white;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --bg-light-gray: #131917;
+}
+
 .btn-style {
     background-color: var(--primary-color);
     padding: 10px 36px !important;
@@ -50,7 +59,7 @@ button {
     transition: var(--effect);
     font-weight: 500;
     font-size: 16px;
-    color: var(--black-color);
+    color: var(--font-light-color);
 
 }
 
@@ -585,17 +594,110 @@ footer .twitter-ul li a:hover {
     width: 100%;
     height: 100%;
     top: 0;
-    transform: rotateY(180deg) scale(0.5,0.5);
+    transform: rotateY(180deg) scale(0.5, 0.5);
     opacity: 0;
     display: flex;
     justify-content: center;
-    transition: 0.5s linear;
+    transition: var(--effect);
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-.about-cards .img-main:hover .img-text{
-    transform: rotateY(0) scale(1,1);
+.about-cards .img-main:hover .img-text {
+    transform: rotateY(0) scale(1, 1);
     opacity: 1;
 }
+
+.about-cards .img-wrapper img {
+    transition: var(--effect);
+}
+
+.about-cards .img-main:hover .img-wrapper img {
+    transform: scale(1.1);
+}
+
 /*-------------------------------------- about us page end-----------------------------------  */
+
+
+
+/*-------------------------------------- Contact us main page start-----------------------------------  */
+.contact-us-main .card-body .card-body-top i {
+    color: var(--primary-color);
+}
+
+.contact-us-main .card-body .card-body-bottom i {
+    color: orange;
+}
+
+.contact-us-main .card-body .card-body-bottom {
+    border-top: 1px solid var(--border-color);
+}
+
+.contact-us-main .card-body a {
+    display: block;
+    text-align: start;
+}
+
+.contact-us-main .card-body a h3 {
+    transition: var(--effect) !important;
+}
+
+.contact-us-main .card-body a:hover h3 {
+    color: var(--primary-color) !important;
+}
+
+.contact-us-main .card {
+    background-color: transparent;
+    border-color: var(--border-color);
+    box-shadow: 0px 30px 40px 0px rgb(1 11 60 / 10%);
+}
+
+.contact-us-main .card h6 {
+    color: var(--black-color);
+}
+
+.contact-us-main .card .rate-circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    right: 25px;
+    bottom: -25px;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--font-light-color);
+    line-height: 70px;
+    text-decoration: line-through;
+    background-color: var(--primary-color);
+}
+/* contact-us-plan */
+.contact-us-plan{
+    background-color: var(--bg-light-gray);
+}
+.contact-us-plan .plan-box{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 50px 40px;
+}
+.contact-us-plan .plan-small{
+    padding: 30px 30px;
+}
+.contact-us-plan .plan-box .rate{
+    color: var(--primary-color);
+    font-size: 60px;
+    font-weight: 600;
+}
+.contact-us-plan .plan-box i{
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    margin-right: 10px;
+}
+.contact-us-plan .plan-box p{
+    font-size: 17px;
+}
+/*-------------------------------------- Contact us main page end-----------------------------------  */

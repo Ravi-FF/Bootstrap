@@ -2,20 +2,10 @@ let changeTheme = (icon) => {
     let body = document.querySelector(":root")
     if (icon.classList[1] == "fa-moon") {
         icon.classList.replace(`fa-moon`, `fa-sun`)
-        body.style.setProperty("--font-dark-color", "#b7b7b7")
-        body.style.setProperty("--font-light-color", "#19211e")
-        body.style.setProperty("--bg-color", "#19211e")
-        body.style.setProperty("--black-color", "white")
-        body.style.setProperty("--border-color", " rgba(255, 255, 255, 0.2)")
-        body.style.setProperty("--bg-light-gray", "#131917")
+        body.classList.add("dark")
     } else if (icon.classList[1] == "fa-sun") {
         icon.classList.replace(`fa-sun`, `fa-moon`)
-        body.style.removeProperty("--font-dark-color", "#b7b7b7")
-        body.style.removeProperty("--font-light-color", "#19211e")
-        body.style.removeProperty("--bg-color", "#19211e")
-        body.style.removeProperty("--black-color", "white")
-        body.style.removeProperty("--border-color", " rgba(255, 255, 255, 0.2)")
-        body.style.removeProperty("--bg-light-gray", "#131917")
+        body.classList.remove("dark")
     }
 }
 // nav-bar fixed when we scrolled 
