@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes-section</title>
+    <!-- bootstrap cdn link here  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- font awesome cdn link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google-font link here  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- external css link here  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- mediaquary link here  -->
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="nav">
+    <!-- header stated  -->
+    <header id="home-section">
+        <!-- top-nav  -->
+        <div class="top-nav py-2 py-md-3">
+            <div class="container">
+                <div class="row gy-2">
+                    <div class="col-12 col-sm-10 col-lg-7">
+                        <ul class="m-0 p-0 d-flex justify-content-center justify-content-sm-start">
+                            <li>Have any question ?</li>
+                            <li><a href="#"><i class="fa-solid fa-phone me-2"></i>+1(21) 234 4567</a></li>
+                            <li><a href="#"><i class="fa-solid fa-envelope me-2"></i>mail@example.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-2 col-lg-5">
+                        <ul class="m-0 p-0 d-flex justify-content-center justify-content-sm-end">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom-nav  -->
+        <div class="bottom-nav position-relative">
+            <nav class="navbar navbar-expand-lg bg-black  py-lg-4 z-3 fixed-top">
+                <div class="container">
+                    <span><i class="fa-solid fa-music fs-2 me-3"></i><a class="navbar-brand fs-2 fw-bold"
+                            href="#">Musical</a></span>
+                    <button class="navbar-toggler border py-2 ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link  active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-us-section">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#music-class-section">Classes</a>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog<i
+                                        class="fa-solid fa-chevron-down ms-2"></i></a>
+                                <ul class="m-0 p-0 dropdown-menu position-absolute submenus rounded"
+                                    id="submenu-1">
+                                    <li><a href="#">Blog with right sidebar</a></li>
+                                    <li><a href="#">Blog with left sidebar</a></li>
+                                    <li><a href="#">Blog without sidebar</a></li>
+                                    <li><a href="#">Blog Single with right sidebar</a></li>
+                                    <li><a href="#">Blog Single with left sidebar</a></li>
+                                    <li><a href="#">Blog Single without sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Pages<i
+                                        class="fa-solid fa-chevron-down ms-2"></i></a>
+                                <ul class="m-0  dropdown-menu p-0 position-absolute submenus rounded"
+                                    id="submenu-2">
+                                    <li><a href="#">404 Page</a></li>
+                                    <li><a href="#">Email Template</a></li>
+                                    <li><a href="#">Shortcodes</a></li>
+                                    <li><a href="#">Landing Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-4 " href="#contact-us-section">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="search-input position-relative">
+                                    <input type="search" class="rounded-4 border py-1 px-3 w-md-auto w-100"
+                                        placeholder="Search Here.!">
+                                    <i class="fa-solid fa-magnifying-glass position-absolute text-white"></i>
+                                </div>
+                            </li>
+                            <div class="change-mood"><i class="fa-regular fa-moon text-white"
+                                    onclick="changeTheme(this)"></i>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- contact-us page  -->
+        <div id="about-us-section" class="about-us-section py-5">
+            <div class="container text-center py-5 text-white align-items-center">
+                <h2 class="mt-5 text-white">Music Classes</h2>
+                <a href="./index.html" class="text-white fw-bold">Home</a> <i
+                    class="fa-solid fa-angle-right fw-bold mx-2"></i> Classes
+            </div>
+        </div>
+    </header>
+    <!-- header end  -->
+    <!-- classes middle main part start  -->
+    <section class="py-5 classes-main">
+        <div class="container py-5 py-lg-4 py-sm-3">
+            <h1 class="text-center mb-5">Discover the Music <span class="fw-normal">Classes</span></h1>
+            <div class="row gy-5">
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card rounded-3 overflow-hidden">
+                        <div class="card-img position-relative">
+                            <img src="./image/c1.jpg" alt="image" class="img-fluid">
+                            <div class="rate-circle position-absolute text-center">
+                                $199
+                            </div>
+                        </div>
+                        <div class="card-body mt-4">
+                            <div class="card-body-top d-flex justify-content-between align-items-center">
+                                <h6><i class="fa-solid fa-music me-2"></i>Music</h6>
+                                <h6><i class="fa-solid fa-calendar-days me-2"></i></i>15 Days</h6>
+                            </div>
+                            <a href="#">
+                                <h3 class="my-3">Paino Classes</h3>
+                            </a>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="card-body-bottom pt-4 mt-5 d-flex justify-content-between align-items-center">
+                                <div class="start">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <a href="#" class="btn btn-style">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card rounded-3 overflow-hidden">
+                        <div class="card-img position-relative">
+                            <img src="./image/c2.jpg" alt="image" class="img-fluid">
+                            <div class="rate-circle position-absolute text-center">
+                                $299
+                            </div>
+                        </div>
+                        <div class="card-body mt-4">
+                            <div class="card-body-top d-flex justify-content-between align-items-center">
+                                <h6><i class="fa-solid fa-music me-2"></i>Music</h6>
+                                <h6><i class="fa-solid fa-calendar-days me-2"></i></i>15 Days</h6>
+                            </div>
+                            <a href="#">
+                                <h3 class="my-3">Guitar Classes</h3>
+                            </a>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="card-body-bottom pt-4 mt-5 d-flex justify-content-between align-items-center">
+                                <div class="start">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <a href="#" class="btn btn-style">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card rounded-3 overflow-hidden">
+                        <div class="card-img position-relative">
+                            <img src="./image/c3.jpg" alt="image" class="img-fluid">
+                            <div class="rate-circle position-absolute text-center">
+                                $399
+                            </div>
+                        </div>
+                        <div class="card-body mt-4">
+                            <div class="card-body-top d-flex justify-content-between align-items-center">
+                                <h6><i class="fa-solid fa-music me-2"></i>Music</h6>
+                                <h6><i class="fa-solid fa-calendar-days me-2"></i></i>25 Days</h6>
+                            </div>
+                            <a href="#">
+                                <h3 class="my-3">DJ Classes</h3>
+                            </a>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="card-body-bottom pt-4 mt-5 d-flex justify-content-between align-items-center">
+                                <div class="start">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <a href="#" class="btn btn-style">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card rounded-3 overflow-hidden">
+                        <div class="card-img position-relative">
+                            <img src="./image/c4.jpg" alt="image" class="img-fluid">
+                            <div class="rate-circle position-absolute text-center">
+                                $199
+                            </div>
+                        </div>
+                        <div class="card-body mt-4">
+                            <div class="card-body-top d-flex justify-content-between align-items-center">
+                                <h6><i class="fa-solid fa-music me-2"></i>Music</h6>
+                                <h6><i class="fa-solid fa-calendar-days me-2"></i></i>15 Days</h6>
+                            </div>
+                            <a href="#">
+                                <h3 class="my-3">Trumpet Music</h3>
+                            </a>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="card-body-bottom pt-4 mt-5 d-flex justify-content-between align-items-center">
+                                <div class="start">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <a href="#" class="btn btn-style">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card rounded-3 overflow-hidden">
+                        <div class="card-img position-relative">
+                            <img src="./image/c5.jpg" alt="image" class="img-fluid">
+                            <div class="rate-circle position-absolute text-center">
+                                $499
+                            </div>
+                        </div>
+                        <div class="card-body mt-4">
+                            <div class="card-body-top d-flex justify-content-between align-items-center">
+                                <h6><i class="fa-solid fa-music me-2"></i>Music</h6>
+                                <h6><i class="fa-solid fa-calendar-days me-2"></i></i>15 Days</h6>
+                            </div>
+                            <a href="#">
+                                <h3 class="my-3">Music Band</h3>
+                            </a>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="card-body-bottom pt-4 mt-5 d-flex justify-content-between align-items-center">
+                                <div class="start">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <a href="#" class="btn btn-style">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card rounded-3 overflow-hidden">
+                        <div class="card-img position-relative">
+                            <img src="./image/c6.jpg" alt="image" class="img-fluid">
+                            <div class="rate-circle position-absolute text-center">
+                                $899
+                            </div>
+                        </div>
+                        <div class="card-body mt-4">
+                            <div class="card-body-top d-flex justify-content-between align-items-center">
+                                <h6><i class="fa-solid fa-music me-2"></i>Music</h6>
+                                <h6><i class="fa-solid fa-calendar-days me-2"></i></i>15 Days</h6>
+                            </div>
+                            <a href="#">
+                                <h3 class="my-3">Podcasts Music</h3>
+                            </a>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="card-body-bottom pt-4 mt-5 d-flex justify-content-between align-items-center">
+                                <div class="start">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <a href="#" class="btn btn-style">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- classes middle main part end -->
+
+    <!-- classes plan section start  -->
+    <section class="py-5 classes-plan">
+        <div class="container">
+            <div class="row justify-content-center align-items-center gy-4">
+                <div class="col-12  col-lg-4">
+                    <h1>Our <span class="fw-normal">Pricing</span> Plan!</h1>
+                    <p>Aptent taciti sociosqu ad litora conubia nostra, per inceptos himenaeos. Aenean volutpat elementum ante, id eleifend eros luctus sit.</p>
+                    <a href="#" class="btn btn-style">See all Price</a>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row justify-content-center align-items-center gy-4 gy-md-0">
+                        <div class="col-xl-5 col-md-6">
+                            <div class="plan-box">
+                                <h2 class="fw-medium">Standard Plan</h2>
+                                <p class="m-0 rate">$39</p>
+                                <p>Per Month</p>
+                                <ul class="p-0 m-0">
+                                    <li><p><i class="fa-solid fa-check"></i>Basic Techniques</p></li>
+                                    <li><p><i class="fa-solid fa-check"></i>Type of Music</p></li>
+                                    <li><p><i class="fa-solid fa-check"></i>Jazz Basic</p></li>
+                                    <li><p class="text-decoration-line-through"><i class="fa-solid fa-check"></i>Effective Mixing</p></li>
+                                </ul>
+                                <a href="#" class="btn btn-style mt-3">Choose Plan</a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-5 col-md-6 ">
+                            <div class="plan-box plan-small">
+                                <h2 class="fw-medium">Extanded Plan</h2>
+                                <p class="m-0 rate">$69</p>
+                                <p>Per Month</p>
+                                <ul class="p-0 m-0">
+                                    <li><p><i class="fa-solid fa-check"></i>Basic Techniques</p></li>
+                                    <li><p><i class="fa-solid fa-check"></i>Type of Music</p></li>
+                                    <li><p><i class="fa-solid fa-check"></i>Jazz Basic</p></li>
+                                    <li><p><i class="fa-solid fa-check"></i>Effective Mixing</p></li>
+                                </ul>
+                                <a href="#" class="btn btn-style mt-3">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- classes plan section end -->
+    <!-- footer-section started  -->
+    <footer class="text-white py-5">
+        <div class="container pt-5">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <h3>About</h3>
+                    <p class="mb-5">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.
+                        Semper at
+                        tempufddfel.Lorem ipsum dolor sit,l. Lorem ipsum dolor sit, amet elit.</p>
+                    <div class="icons">
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h3>Links</h3>
+                            <ul class="m-0 p-0 links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Classes</a></li>
+                                <li><a href="#">Blog Postes</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h3>Explore</h3>
+                            <ul class="m-0 p-0 links">
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Offers</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Twitter Feed</h3>
+                    <ul class="p-0 twitter-ul">
+                        <li>
+                            <p><a href="#">@Honynilf</a>
+                                Hi <a href="#">@Honynilf</a> , can you please submit a ticket at <a
+                                    href="#">https://v.co/ij123A34J45A</a> <br> 1 year ago.
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="#">@Honynilf</a>
+                                Hi <a href="#">@Honynilf</a> , can you please submit a ticket at <a
+                                    href="#">https://v.co/ij123A34J45A</a> and one of our support agent… <a
+                                    href="#">https://v.co/ij123A34J45A </a><br>2 year ago.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright text-center pt-5">
+                <p>© 2022 Musical. All rights reserved. Design by W3Layouts <span class="text-white">Ravi Suthar</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-section end  -->
+    <!-- bootstrap javascript link here  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- external-script  -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

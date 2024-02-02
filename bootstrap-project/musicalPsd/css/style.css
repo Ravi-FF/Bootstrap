@@ -41,6 +41,7 @@ button {
     --border-color: #eee;
     --bg-light-gray: #F8F9FA;
     --footer-bg: #060500;
+    --box-shadow: 0 1rem 3rem #f5f3f3;
 }
 
 .dark {
@@ -50,6 +51,7 @@ button {
     --black-color: white;
     --border-color: rgba(255, 255, 255, 0.2);
     --bg-light-gray: #131917;
+    --box-shadow: 0 1rem 3rem rgb(10 14 13);
 }
 
 .btn-style {
@@ -144,6 +146,10 @@ header .bottom-nav .fa-music {
     color: var(--primary-color) !important;
 }
 
+header .dropdown-menu {
+    background-color: var(--bg-color);
+}
+
 .bottom-nav .navbar-nav .active {
     color: var(--primary-color);
 }
@@ -158,7 +164,8 @@ header .bottom-nav .fa-music {
     font-size: 12px;
 }
 
-.bottom-nav .navbar-nav .search-input i {
+.bottom-nav .navbar-nav .search-input i,
+.blog-left .search-box i {
     background-color: var(--primary-color);
     right: 0;
     top: 0;
@@ -209,9 +216,10 @@ header .bottom-nav .fa-music {
     width: 15px;
     content: "";
     height: 15px;
-    background-color: var(--font-light-color);
+    background-color: var(--bg-color);
     position: absolute;
     top: -8px;
+    z-index: -1;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
 }
@@ -620,43 +628,43 @@ footer .twitter-ul li a:hover {
 
 
 
-/*-------------------------------------- Contact us main page start-----------------------------------  */
-.contact-us-main .card-body .card-body-top i {
+/*-------------------------------------- Classes main page start-----------------------------------  */
+.classes-main .card-body .card-body-top i {
     color: var(--primary-color);
 }
 
-.contact-us-main .card-body .card-body-bottom i {
+.classes-main .card-body .card-body-bottom i {
     color: orange;
 }
 
-.contact-us-main .card-body .card-body-bottom {
+.classes-main .card-body .card-body-bottom {
     border-top: 1px solid var(--border-color);
 }
 
-.contact-us-main .card-body a {
+.classes-main .card-body a {
     display: block;
     text-align: start;
 }
 
-.contact-us-main .card-body a h3 {
+.classes-main .card-body a h3 {
     transition: var(--effect) !important;
 }
 
-.contact-us-main .card-body a:hover h3 {
+.classes-main .card-body a:hover h3 {
     color: var(--primary-color) !important;
 }
 
-.contact-us-main .card {
+.classes-main .card {
     background-color: transparent;
     border-color: var(--border-color);
     box-shadow: 0px 30px 40px 0px rgb(1 11 60 / 10%);
 }
 
-.contact-us-main .card h6 {
+.classes-main .card h6 {
     color: var(--black-color);
 }
 
-.contact-us-main .card .rate-circle {
+.classes-main .card .rate-circle {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -666,27 +674,31 @@ footer .twitter-ul li a:hover {
     font-size: 18px;
     color: var(--font-light-color);
     line-height: 70px;
-    text-decoration: line-through;
     background-color: var(--primary-color);
 }
+
 /* contact-us-plan */
-.contact-us-plan{
+.classes-plan {
     background-color: var(--bg-light-gray);
 }
-.contact-us-plan .plan-box{
+
+.classes-plan .plan-box {
     background-color: var(--bg-color);
     border-radius: 10px;
     padding: 50px 40px;
 }
-.contact-us-plan .plan-small{
+
+.classes-plan .plan-small {
     padding: 30px 30px;
 }
-.contact-us-plan .plan-box .rate{
+
+.classes-plan .plan-box .rate {
     color: var(--primary-color);
     font-size: 60px;
     font-weight: 600;
 }
-.contact-us-plan .plan-box i{
+
+.classes-plan .plan-box i {
     background-color: var(--primary-color);
     width: 20px;
     border-radius: 50%;
@@ -697,7 +709,134 @@ footer .twitter-ul li a:hover {
     font-size: 10px;
     margin-right: 10px;
 }
-.contact-us-plan .plan-box p{
+
+.classes-plan .plan-box p {
     font-size: 17px;
 }
-/*-------------------------------------- Contact us main page end-----------------------------------  */
+
+/*-------------------------------------- Classes main page end-----------------------------------  */
+
+
+/*-------------------------------------- Contact main page start-----------------------------------  */
+.Contact-us-main .form-control {
+    background-color: var(--bg-light-gray);
+    margin-top: 20px;
+    height: 50px;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: none;
+}
+
+.Contact-us-main .Contact-us-main .form-control:focus {
+    border: 1px solid var(--primary-color);
+}
+
+.Contact-us-main .form-control::placeholder {
+    color: var(--font-dark-color);
+}
+
+.Contact-us-main textarea {
+    height: 150px !important;
+}
+
+.Contact-us-main .contact-us-company {
+    background-color: var(--bg-color);
+    padding: 40px;
+    box-shadow: var(--box-shadow);
+}
+
+.Contact-us-main .contact-us-company i {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.Contact-us-main .contact-us-company p {
+    font-size: 17px;
+}
+
+.Contact-us-main .contact-us-company a {
+    color: var(--font-dark-color);
+    transition: var(--effect);
+}
+
+.Contact-us-main .contact-us-company a:hover {
+    color: var(--primary-color);
+}
+
+.map-section .map {
+    filter: grayscale(100%);
+}
+
+/*-------------------------------------- Contact main page end-----------------------------------  */
+
+/* blog-with right side bar page start */
+.blog-left .round-img {
+    width: 50px;
+    overflow: hidden;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.blog-left .card:hover .card-body h3 {
+    color: var(--primary-color);
+}
+
+.blog-left .card .card-img {
+    transition: 0.2s ease-out;
+}
+
+.blog-left .card:hover .card-img {
+    transform: scale(1.02);
+}
+
+.blog-left .search-box input {
+    height: 50px;
+}
+
+.blog-left .search-box i {
+    line-height: 50px;
+    width: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.blog-left .archives-box ul li {
+    list-style: square;
+    margin: 14px 0;
+    color: var(--primary-color);
+}
+
+.blog-left .archives-box ul li a,
+.blog-left .recent-box a:nth-child(1) {
+    color: var(--black-color);
+    display: block;
+    text-align: start;
+}
+
+.blog-left .archives-box ul li a:hover,
+.blog-left .recent-box a:nth-child(1):hover {
+    color: var(--primary-color);
+}
+
+.blog-left .recent-box strong {
+    color: var(--black-color);
+}
+.blog-left .recent-box a{
+    text-align: start;
+}
+.blog-left .recent-img{
+    width: 90px;
+    height: 90px;
+}
+.blog-left .tag-box a {
+    background-color: var(--bg-light-gray);
+    margin: 4px;
+    color: var(--black-color);
+    transition: var(--effect);
+}
+
+.blog-left .tag-box a:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-light-gray);
+}
+
+/* blog-with right side bar page  end*/

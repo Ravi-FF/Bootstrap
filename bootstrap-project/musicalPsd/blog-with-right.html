@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact-us</title>
+    <title>Blog with right sidebar</title>
     <!-- bootstrap cdn link here  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <!-- font awesome cdn link here -->
@@ -73,8 +73,7 @@
                             <li class="nav-item position-relative">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog<i
                                         class="fa-solid fa-chevron-down ms-2"></i></a>
-                                <ul class="m-0 p-0 dropdown-menu position-absolute submenus rounded"
-                                    id="submenu-1">
+                                <ul class="m-0 p-0 dropdown-menu position-absolute submenus rounded" id="submenu-1">
                                     <li><a href="#">Blog with right sidebar</a></li>
                                     <li><a href="#">Blog with left sidebar</a></li>
                                     <li><a href="#">Blog without sidebar</a></li>
@@ -86,8 +85,7 @@
                             <li class="nav-item position-relative">
                                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Pages<i
                                         class="fa-solid fa-chevron-down ms-2"></i></a>
-                                <ul class="m-0  dropdown-menu p-0 position-absolute submenus rounded"
-                                    id="submenu-2">
+                                <ul class="m-0  dropdown-menu p-0 position-absolute submenus rounded" id="submenu-2">
                                     <li><a href="#">404 Page</a></li>
                                     <li><a href="#">Email Template</a></li>
                                     <li><a href="#">Shortcodes</a></li>
@@ -122,71 +120,177 @@
         </div>
     </header>
     <!-- header end  -->
-    <!-- Contact-us main part start  -->
-    <section class="py-5 Contact-us-main">
-        <div class="container py-5 py-lg-4 py-sm-3">
-            <h1 class="text-center mb-5">Contact <span class="fw-normal">Us</span></h1>
-            <div class="row justify-content-center gy-4">
-                <div class="col-lg-7">
-                    <form>
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="text" class="form-control mt-0" placeholder="Your Name" required>
+    <!-- blog-with right side bar start  -->
+    <main>
+        <section class="blog-left py-5 classes-main">
+            <div class="container  py-lg-5 py-md-4 py-sm-2">
+                <div class="row gy-5">
+                    <div class="col-lg-8">
+                        <div class="card rounded-3 overflow-hidden">
+                            <div class="card-img">
+                                <img src="./image/banner2.jpg" alt="image" class="img-fluid">
                             </div>
-                            <div class="col-6">
-                                <input type="email" class="form-control mt-0" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <input type="text" placeholder="Subject" class="form-control">
-                        <input type="url" placeholder="Website URL" class="form-control">
-                        <textarea rows="6" class="form-control" placeholder="Type your message here"></textarea>
-                        <button type="submit" class="btn btn-style mt-lg-4 mt-3">Send Message</button>
-                    </form>
-                </div>
-                <div class="col-lg-5 ps-lg-5 ps-0">
-                    <div class="contact-us-company">
-                        <div class="company-main d-flex align-items-start gap-4">
-                            <div class="icon"> <i class="fa-solid fa-building"></i></div>
-                            <div class="text">
-                                <h5 class="fw-medium">Company Address</h5>
-                                <p class="m-0">Musical, 10001, 5th Avenue, 12202 street, London.</p>
+                            <div class="card-body">
+                                <a href="#">
+                                    <h3 class="my-3">How to Learn Guitar Quickly and Efficiently</h3>
+                                </a>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sunt inc officia
+                                    deserunt.</p>
+                                <div class="card-body-top d-flex justify-content-between align-items-center mt-5">
+                                    <a href="#"
+                                        class="round-img-wrapper d-flex justify-content-center align-items-center gap-3">
+                                        <div class="round-img">
+                                            <img src="./image/testi3.jpg" alt="image" class="img-fluid">
+                                        </div>
+                                        <h6 class="m-0">Turne Leo</h6>
+                                    </a>
+                                    <h6><i class="fa-solid fa-calendar-days me-2"></i></i>Jan 12, 2022</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="company-main d-flex align-items-start gap-4 mt-4">
-                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                            <div class="text">
-                                <h5 class="fw-medium">Call Us</h5>
-                                <a href="#">+1(21) 112 7368</a>
+                        <div class="card rounded-3 overflow-hidden mt-lg-5 mt-4">
+                            <div class="card-img">
+                                <img src="./image/blog2.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <a href="#">
+                                    <h3 class="my-3">Where to Buy Quality Folk Drums and Percussion</h3>
+                                </a>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sunt inc officia
+                                    deserunt.</p>
+                                <div class="card-body-top d-flex justify-content-between align-items-center mt-5">
+                                    <a href="#"
+                                        class="round-img-wrapper d-flex justify-content-center align-items-center gap-3">
+                                        <div class="round-img">
+                                            <img src="./image/testi1.jpg" alt="image" class="img-fluid">
+                                        </div>
+                                        <h6 class="m-0">Molive Joe</h6>
+                                    </a>
+                                    <h6><i class="fa-solid fa-calendar-days me-2"></i></i>Jan 12, 2022</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="company-main d-flex align-items-start gap-4 mt-4">
-                            <div class="icon"><i class="fa-solid fa-envelope-open-text"></i></div>
-                            <div class="text">
-                                <h5 class="fw-medium">Email Us</h5>
-                                <a href="#">example@mail.com</a>
+                        <div class="card rounded-3 overflow-hidden mt-lg-5 mt-4">
+                            <div class="card-img">
+                                <img src="./image/blog4.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <a href="#">
+                                    <h3 class="my-3">5 Basic Drumming Techniques to Master</h3>
+                                </a>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sunt inc officia
+                                    deserunt.</p>
+                                <div class="card-body-top d-flex justify-content-between align-items-center mt-5">
+                                    <a href="#"
+                                        class="round-img-wrapper d-flex justify-content-center align-items-center gap-3">
+                                        <div class="round-img">
+                                            <img src="./image/testi2.jpg" alt="image" class="img-fluid">
+                                        </div>
+                                        <h6 class="m-0">Eetey Cruis</h6>
+                                    </a>
+                                    <h6><i class="fa-solid fa-calendar-days me-2"></i></i>Jan 12, 2022</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="company-main d-flex align-items-start gap-4 mt-4">
-                            <div class="icon"><i class="fa-solid fa-headphones-simple"></i></div>
-                            <div class="text">
-                                <h5 class="fw-medium">Customer Support</h5>
-                                <a href="#">info@support.com</a>
+                    </div>
+                    <div class="col-lg-4 ps-lg-5">
+                        <div class="search-box mb-lg-5 mb-4">
+                            <h4 class=" mb-4">Search Here</h4>
+                            <div class="search-input position-relative">
+                                <input type="search" class="rounded-5 border py-1 px-3 w-md-auto w-100"
+                                    placeholder="Search">
+                                <i class="fa-solid fa-magnifying-glass position-absolute text-white"></i>
                             </div>
+                        </div>
+                        <div class="archives-box mb-lg-5 mb-4">
+                            <h4 class="my-4">Archives</h4>
+                            <ul class="">
+                                <li class="m-0">
+                                    <h6><a href="#">January 2021</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">February 2021</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">March 2021</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">April 2021</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">May 2021</a></h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about-us-box mb-lg-5 mb-4">
+                            <h4 class="my-4">About Us</h4>
+                            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                                tempufddfel.Lorem ipsum dolor sit,l. Lorem ipsum dolor sit, amet elit.</p>
+                        </div>
+                        <div class="recent-box mb-lg-5 mb-4">
+                            <h4 class="my-4">Recent Posts</h4>
+                            <div class="recent-wrapper d-flex gap-4 ">
+                                <div class="recent-img">
+                                    <img src="./image/blog-s1.jpg" alt="img" class="img-fluid rounded">
+                                </div>
+                                <div class="recent-text">
+                                    <a href="#">
+                                    <h6 class="fw-bold">
+                                            How to Learn Guitar Quickly and Efficiently
+                                        </h6>
+                                    </a>
+                                    <strong>January 24, 2022</strong>
+                                </div>
+                            </div>
+                            <div class="recent-wrapper d-flex gap-4 mt-3">
+                                <div class="recent-img">
+                                    <img src="./image/blog-s2.jpg" alt="img" class="img-fluid rounded">
+                                </div>
+                                <div class="recent-text">
+                                    <a href="#">
+                                        <h6 class="fw-bold">
+                                            Top 10 Microphones for Your Home Studio
+                                        </h6>
+                                    </a>
+                                    <strong>January 24, 2022</strong>
+                                </div>
+                            </div>
+                            <div class="recent-wrapper d-flex gap-4 mt-3">
+                                <div class="recent-img">
+                                    <img src="./image/blog-s3.jpg" alt="img" class="img-fluid rounded">
+                                </div>
+                                <div class="recent-text">
+                                    <a href="#">
+                                        <h6 class="fw-bold">
+                                            Where to Buy Quality Folk Drums and Percussion
+                                        </h6>
+                                    </a>
+                                    <strong>January 24, 2022</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tag-box">
+                            <h4 class="my-4">Tags</h4>
+                            <a href="#" class="btn">Music</a>
+                            <a href="#" class="btn">Podcasts</a>
+                            <a href="#" class="btn">Piano</a>
+                            <a href="#" class="btn">Guitar</a>
+                            <a href="#" class="btn">Trumpet</a>
+                            <a href="#" class="btn">Listening</a>
+                            <a href="#" class="btn">Happiness</a>
+                            <a href="#" class="btn">feel</a>
+                            <a href="#" class="btn">Jazz</a>
+                            <a href="#" class="btn">Instrument</a>
+                            <a href="#" class="btn">Drums</a>
+                            <a href="#" class="btn">Events</a>
+                            <a href="#" class="btn">Melody</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </section>
-    <!-- contact-us-main part end -->
-    <!-- map-section started  -->
-    <section class="map-section">
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl" width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
-        </div>
-    </section>
-    <!-- map-section end -->
+        </section>
+    </main>
+    <!-- blog-with right side bar end  -->
     <!-- footer-section started  -->
     <footer class="text-white py-5">
         <div class="container pt-5">
