@@ -78,6 +78,7 @@ h1 {
 p {
     color: var(--font-dark-color);
     font-size: 18 px;
+    line-height: 30px;
 }
 
 h1,
@@ -768,6 +769,9 @@ footer .twitter-ul li a:hover {
 
 /*-------------------------------------- Contact main page end-----------------------------------  */
 
+
+/*-------------------------------------- blog-with right side bar page start -----------------------------------  */
+
 /* blog-with right side bar page start */
 .blog-left .round-img {
     width: 50px;
@@ -820,13 +824,16 @@ footer .twitter-ul li a:hover {
 .blog-left .recent-box strong {
     color: var(--black-color);
 }
-.blog-left .recent-box a{
+
+.blog-left .recent-box a {
     text-align: start;
 }
-.blog-left .recent-img{
+
+.blog-left .recent-img {
     width: 90px;
     height: 90px;
 }
+
 .blog-left .tag-box a {
     background-color: var(--bg-light-gray);
     margin: 4px;
@@ -840,3 +847,80 @@ footer .twitter-ul li a:hover {
 }
 
 /* blog-with right side bar page  end*/
+
+/*-------------------------------------- blog-with right side bar page end -----------------------------------  */
+
+/*-------------------------------------- blog-with single page start -----------------------------------  */
+.blog-single .card-body .quote {
+    border-left: 2px solid var(--black-color);
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+}
+
+.blog-single .quote-text {
+    color: var(--font-dark-color);
+}
+
+.blog-single .quote-text::before {
+    content: "---- ";
+}
+
+.blog-single .posts a {
+    display: inline-block;
+}
+
+.blog-single .posts a i {
+    background-color: #f50537;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.blog-single .posts a .fa-facebook {
+    background-color: #3b5998;
+}
+
+.blog-single .posts a .fa-twitter {
+    background-color: #1da1f2;
+}
+
+.blog-single .posts a .fa-linkedin {
+    background-color: #0077b5;
+}
+.blog-single .comments-part .comment-text{
+    background-color: var(--bg-light-gray);
+    position: relative;
+    border: 1px solid var(--border-color);
+}
+.blog-single .comments-part .comment-text strong{
+    color: var(--black-color);
+}
+.blog-single .comments-part .comment-text a{
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-left: 10px;
+}
+.blog-single .comments-part .comment-text::before{
+    width: 20px;
+    height: 20px;
+    background-color: var(--bg-light-gray);
+    left: -10px;
+    top: 10px;
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    transform: rotate(45deg);
+    position: absolute;
+    content: "";
+}
+
+.blog-single .comments-part .comment-right::before{
+    left: 98.5% !important;
+    transform: rotate(220deg);
+    top: 10px;
+}
+
+/*-------------------------------------- blog-with single page end -----------------------------------  */

@@ -83,6 +83,19 @@
     .about-main  button {
         margin: 20px 0 !important;
     }
+    .blog-single .comments-part .comment-text::before{
+        left: 30px;
+        top: -10px;
+        transform: rotate(135deg);
+    }
+
+    .blog-single .comments-part .comment-right::before{
+        left: 30px !important;
+        transform: rotate(-45deg);
+        top: 96.5%;
+    }
+    
+    
 }
 
 @media screen and (max-width:768px) {
