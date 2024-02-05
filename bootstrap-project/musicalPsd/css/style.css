@@ -891,20 +891,24 @@ footer .twitter-ul li a:hover {
 .blog-single .posts a .fa-linkedin {
     background-color: #0077b5;
 }
-.blog-single .comments-part .comment-text{
+
+.blog-single .comments-part .comment-text {
     background-color: var(--bg-light-gray);
     position: relative;
     border: 1px solid var(--border-color);
 }
-.blog-single .comments-part .comment-text strong{
+
+.blog-single .comments-part .comment-text strong {
     color: var(--black-color);
 }
-.blog-single .comments-part .comment-text a{
+
+.blog-single .comments-part .comment-text a {
     color: var(--primary-color);
     font-weight: 500;
     margin-left: 10px;
 }
-.blog-single .comments-part .comment-text::before{
+
+.blog-single .comments-part .comment-text::before {
     width: 20px;
     height: 20px;
     background-color: var(--bg-light-gray);
@@ -917,10 +921,56 @@ footer .twitter-ul li a:hover {
     content: "";
 }
 
-.blog-single .comments-part .comment-right::before{
+.blog-single .comments-part .comment-right::before {
     left: 98.5% !important;
     transform: rotate(220deg);
     top: 10px;
 }
 
 /*-------------------------------------- blog-with single page end -----------------------------------  */
+
+
+/*-------------------------------------- error page started here -----------------------------------  */
+.error-page .search-input input {
+    height: 50px;
+    box-shadow: var(--box-shadow);
+}
+
+.error-page .search-input .btn-style {
+    right: 0;
+    height: 100%;
+    width: 150px;
+}
+
+.error-page h1 {
+    font-size: 220px;
+    background: url(../image/banner3.jpg) fixed;
+    background-clip: text;
+    animation: slidebg 30s infinite linear;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes slidebg {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 90%;
+    }
+}
+
+.error-page .back-home {
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+.error-page .back-home:hover {
+    color: var(--primary-color);
+}
+
+/*-------------------------------------- error page end here -----------------------------------  */
+/* demo  */
+.demo{
+    border: 1px solid red;
+}
