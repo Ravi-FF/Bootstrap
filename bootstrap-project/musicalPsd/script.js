@@ -1,5 +1,5 @@
 let changeTheme = (icon) => {
-    let body = document.querySelector(":root")
+    let body = document.querySelector("body")
     if (icon.classList[1] == "fa-moon") {
         icon.classList.replace(`fa-moon`, `fa-sun`)
         body.classList.add("dark")
@@ -23,10 +23,4 @@ let video_show = (icon) => {
     } else if (icon.classList[1] == "fa-xmark") {
         video_div.classList.remove("video-overly_show")
     }
-}
-
-// dark-mode and light mode 
-let darkMode = () => {
-    // let x = document.querySelector("body")
-    // x.style.removePropertyProperty()
 }
